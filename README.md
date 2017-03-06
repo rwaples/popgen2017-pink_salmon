@@ -44,7 +44,9 @@ About the *.ipynb files.  These are [Jupyter](http://jupyter.org/) notebook file
 ### Getting started
 * Clone or download this repository (to be run in terminal)
         
-        git clone https://github.com/rwaples/popgen2017-pink_salmon.git
+```
+git clone https://github.com/rwaples/popgen2017-pink_salmon.git
+```
 
 or go to the [repository](https://github.com/rwaples/popgen2017-pink_salmon) and click **Clone or download** and then **Download ZIP**
         
@@ -52,13 +54,8 @@ or go to the [repository](https://github.com/rwaples/popgen2017-pink_salmon) and
 
 ### Running the analyses
 
-    chmod +x /path/to/your/filename.extension
-    ./scripts/1_clean_data.sh
-    ./scripts/2_do_PCA.sh
-    ./scripts/3_plot_PCA.r
-    ./scripts/4_calculate_LD.sh
-    ./scripts/5_estimate_Ne.r
-    ./scripts/6_plot_Ne.r
+
+
 
 
 ## Questions 
