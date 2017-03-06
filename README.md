@@ -7,16 +7,19 @@
 ### 1_clean_data
 1. Why exclude loci not placed on a chromosome?
     
-2. Why is it import to consider Hardy-Weinberg equalibrium, and the genotyping rate of each locus?
+2. Why is it import to consider Hardy-Weinberg equalibrium and the genotyping rate of each locus?
     
-3.  What are the sample sizes and number of loci used in each analysis?
+3. What are the sample sizes and number of loci used in the analysis of each population, why do they differ?
     
 ### 2_do_PCA &  3_plot_PCA
-1.  Why is it useful to explore your data before and after filtering steps?
-2.   What does each dot represent?  What is summarize by the PCA projection?
-3.   Describe the differences between the two PCAs (before and after filtering).  How are they different?  How are they similar?
-4.  What is a biological interpretation of the Puget_EVEN individual that clusters close to the the Koppen_EVEN individuals?
-  
+1. Why is it useful to explore/visualize your data before and after filtering steps?
+2. What does each dot represent?  What is summarize by the PCA projection?
+3. Describe the differences between the two PCAs (before and after filtering).  
+    * How are they different? 
+    * How are they similar?
+4.  Why do you think there is a Puget_EVEN individual that is projected near the the Koppen_EVEN individuals?
+    * Give a possible biological explanation?
+    * Give a possible laboratory explanation?  
     
 ### 4_calculate_r2
 1.  What does the r2 statistic measure?  How is r2 related to LD?
