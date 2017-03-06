@@ -17,26 +17,25 @@
 3. Describe the differences between the two PCAs (before and after filtering).  
     * How are they different? 
     * How are they similar?
-4.  Why do you think there is a Puget_EVEN individual that is projected near the the Koppen_EVEN individuals?
+4. Why do you think there is a Puget_EVEN individual that is projected near the the Koppen_EVEN individuals?
     * Give a possible biological explanation?
     * Give a possible laboratory explanation?  
     
 ### 4_calculate_r2
-1.  What does the r2 statistic measure?  How is r2 related to LD?
-  
-2.   Why is it often important to remove very low frequency allelels when summarizing LD?
-3.   Which population has the most LD?
-4.   How does sample size affect LD?
+1. What does the r2 statistic measure?  How is r2 related to LD?
+2. Why is it often important to remove very low frequency allelels when summarizing LD?
+3. Which population has the most LD, the least?
+4. How is LD affected by sample size?
   
 ### 5_estimate_Ne
 
 ### 6_plot_Ne
-1.  Which population do you expect to have the most genetic drift?, the least?
+1. Which population do you expect to have the most genetic drift?, the least?
   
 
   
 ### Perspectives
-1.  Do you think sample size was important?  How would two samples that were siblings affect your Ne estiamtes?
-2.  How does this analysis relate to the LD in Mountain and Western Lowland Gorillas?
-3.  How would recent migration into a population affect genetic estimates of LD?
-4.  How would 
+1. Do you think sample size was important?  How would two samples that were siblings affect your Ne estiamtes?
+2. How does this analysis relate to the LD in Mountain and Western Lowland Gorillas?
+3. How would recent migration into a population affect genetic estimates of LD?
+4. How would 
