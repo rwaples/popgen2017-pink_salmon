@@ -41,8 +41,14 @@ About the *.ipynb files.  These are [Jupyter](http://jupyter.org/) notebook file
 
 ## Exercise
 ### Getting started
-    Clone or download the repository
-    Download pink salmon genetic data 
+* Clone or download this repository
+        
+        git clone https://github.com/rwaples/popgen2017-pink_salmon.git
+        or go to https://github.com/rwaples/popgen2017-pink_salmon and click **Clone or download** and then Download ZIP
+        
+* Download pink salmon genetic data
+    
+    
 
 ### Running the analyses
     ./scripts/1_clean_data.sh
