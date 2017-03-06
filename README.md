@@ -1,4 +1,4 @@
-# Estimation of effective population size in pink salmon
+# Estimation of contemporary effective population size in pink salmon
 ## Population Genetics 2017, University of Copenhagen
 #### Ryan Waples ryan.waples@gmail.com
 
@@ -15,21 +15,42 @@
 * Understand the relationship between LD and N<sub>e</sub>
 
 ## Background reading - Nielsen and Slatkin
-* Wright-Fischer Model p. 22-27
-* Effective population size p. 43-46
-* Linkage Disequilibrium p. 108 - 112, including boxes 6.1 - 6.3
+* Wright-Fischer Model - p. 22-27
+* Effective population size - p. 43-46
+* Linkage Disequilibrium - p. 108-112, including boxes 6.1-6.3
 
 ## Pink salmon
-Info on pink salmon here
+Info on pink salmon here.  Nome, Alaska is the end of the [Iditarod dog sled race](http://iditarod.com/)
 
-## Data source
-Link to paper with pink salmon data
+Pictures of the sampling cites
+    
+Best estimates of the census population sizes
 
-## About the *.ipynbfiles
+## How to use this document.
+You are reading README.md, a markdown document that decribes the 
 
-## Exercises
+About the *.ipynb files.  These are [Jupyter](http://jupyter.org/) notebook files that help organize and communicate the analyses in this exercise.  You can view these (non-interactively) on [Github](https://github.com/rwaples/popgen2017-pink_salmon) or with [NBviewer](https://nbviewer.jupyter.org/github/rwaples/popgen2017-pink_salmon/tree/master/)
+    
+### Sub-directories
+* ./data - raw data
+* ./scripts - analysis scripts
+    - *.sh files are meant to be run in the terminal
+    - *.r files are meant to be run in [R](https://cran.r-project.org/)
+* ./work - intermediate data files and result
+* ./plots - figures and plots
+
+## Exercise
 ### Getting started
-    Download the data
+    Clone or download the repository
+    Download pink salmon genetic data 
+
+### Running the analyses
+    ./scripts/1_clean_data.sh
+    ./scripts/2_do_PCA.sh
+    ./scripts/3_plot_PCA.r
+    ./scripts/4_calculate_LD.sh
+    ./scripts/5_estimate_Ne.r
+    ./scripts/6_plot_Ne.r
 
 
 ## Questions 
@@ -45,27 +66,42 @@ Link to paper with pink salmon data
     
 ### 2_do_PCA & 3_plot_PCA
 1. Why is it useful to explore/visualize your data before and after filtering steps?
+
 2. What does each dot represent?  What is summarize by the PCA projection?
+
 3. Describe the differences between the two PCAs (before and after filtering).  
     * How are they different? 
     * How are they similar?
+
 4. Why do you think there is a Puget_EVEN individual that is projected near the the Koppen_EVEN individuals?
     * Give a possible biological explanation?
     * Give a possible laboratory explanation?  
     
 ### 4_calculate_r2
 1. What does the r<sup>2</sup> statistic measure?  How is r<sup>2</sup> related to LD?
+
 2. Why is it often important to remove very low frequency alleles when measuring LD?
+
 3. Which population of pink salmon has the most LD, the least?
+
 4. How is LD affected by sample size?
   
 ### 5_estimate_Ne & 6_plot_Ne
 1. Which population do you expect to have the most genetic drift, the least?
+
 2. Which lineage of pink salmon has higher N<sub>e</sub> in the north, south, and middle?
+
 3. Which lineage of pink salmon has higher N<sub>e</sub> in the sount?
  
 ### Perspectives
 1. Do you think sample size was important?  How would two samples that were siblings affect your Ne estiamtes?
-3. How would recent migration into a population affect estimates of LD and N<sub>e</sub>?
-2. How does this analysis compare to the LD in Mountain and Western Lowland Gorillas?  Do these analyses measure the same thing? 
+
+2. How would recent migration into a population affect estimates of LD and N<sub>e</sub>?
+
+3. How does this analysis compare to the LD in Mountain and Western Lowland Gorillas?  Do these analyses measure the same thing? 
+
 4. Given time and money how would you improve this analysis - more samples? more loci? more populations?
+
+## Data source
+Link to paper with pink salmon data
+
