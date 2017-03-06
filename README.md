@@ -4,9 +4,10 @@
 
 ## Program
 * Apply data filters (PLINK)
-* Explore patterns of population structure pink salmon and visual the ffect of data filters
+* Explore patterns of population structure pink salmon 
+* Visualize the effect of data filters
 * Estimate pairwise linkage disequilibrium (LD) between all SNPs in each population
-* Use the LD estimates to estiamte effective population size (N<sub>e</sub>) in each population
+* Use the LD estimates to estimate effective population size (N<sub>e</sub>) in each population
 * Compare estimates of the census (N<sub>c</sub>) and effective (N<sub>e</sub>) population sizes  
 
 ## Learning outcomes
@@ -41,16 +42,17 @@ About the *.ipynb files.  These are [Jupyter](http://jupyter.org/) notebook file
 
 ## Exercise
 ### Getting started
-* Clone or download this repository
+* Clone or download this repository (to be run in terminal)
         
         git clone https://github.com/rwaples/popgen2017-pink_salmon.git
-        or go to https://github.com/rwaples/popgen2017-pink_salmon and click **Clone or download** and then Download ZIP
+
+or go to the [repository](https://github.com/rwaples/popgen2017-pink_salmon) and click **Clone or download** and then **Download ZIP**
         
 * Download pink salmon genetic data
-    
-    
 
 ### Running the analyses
+
+    chmod +x /path/to/your/filename.extension
     ./scripts/1_clean_data.sh
     ./scripts/2_do_PCA.sh
     ./scripts/3_plot_PCA.r
@@ -73,15 +75,15 @@ About the *.ipynb files.  These are [Jupyter](http://jupyter.org/) notebook file
 ### 2_do_PCA & 3_plot_PCA
 1. Why is it useful to explore/visualize your data before and after filtering steps?
 
-2. What does each dot represent?  What is summarize by the PCA projection?
+2. What is shown in by first few axes of the PCA projection? What does each dot represent?  
 
 3. Describe the differences between the two PCAs (before and after filtering).  
     * How are they different? 
     * How are they similar?
 
 4. Why do you think there is a Puget_EVEN individual that is projected near the the Koppen_EVEN individuals?
-    * Give a possible biological explanation?
-    * Give a possible laboratory explanation?  
+    * Give a possible biological explanation
+    * Give a possible laboratory explanation  
     
 ### 4_calculate_r2
 1. What does the r<sup>2</sup> statistic measure?  How is r<sup>2</sup> related to LD?
