@@ -5,3 +5,15 @@ plink --bfile ./work/pink_salmon.clean --family --keep-cluster-names Nome_ODD --
 plink --bfile ./work/pink_salmon.clean --family --keep-cluster-names Nome_EVEN --hwe .001 midp --geno 0.02 --maf 0.05 --mind 0.15 --make-bed --out ./work/Nome_EVEN
 plink --bfile ./work/pink_salmon.clean --family --keep-cluster-names Puget_ODD --hwe .001 midp --geno 0.02 --maf 0.05 --mind 0.15 --make-bed --out ./work/Puget_ODD
 plink --bfile ./work/pink_salmon.clean --family --keep-cluster-names Puget_EVEN --hwe .001 midp --geno 0.02 --maf 0.05 --mind 0.15 --make-bed --out ./work/Puget_EVEN
+plink --bfile ./work/pink_salmon.clean --family --keep-cluster-names Koppen_ODD --hwe .001 midp --geno 0.02 --maf 0.05 --mind 0.15 --make-bed --out ./work/Koppen_ODD
+plink --bfile ./work/pink_salmon.clean --family --keep-cluster-names Koppen_EVEN --hwe .001 midp --geno 0.02 --maf 0.05 --mind 0.15 --make-bed --out ./work/Koppen_EVEN
+plink --bfile ./work/pink_salmon.clean --family --keep-cluster-names Nome_ODD --hwe .001 midp --geno 0.02 --maf 0.05 --mind 0.15 --make-bed --out ./work/Nome_ODD
+plink --bfile ./work/pink_salmon.clean --family --keep-cluster-names Nome_EVEN --hwe .001 midp --geno 0.02 --maf 0.05 --mind 0.15 --make-bed --out ./work/Nome_EVEN
+plink --bfile ./work/pink_salmon.clean --family --keep-cluster-names Puget_ODD --hwe .001 midp --geno 0.02 --maf 0.05 --mind 0.15 --make-bed --out ./work/Puget_ODD
+plink --bfile ./work/pink_salmon.clean --family --keep-cluster-names Puget_EVEN --hwe .001 midp --geno 0.02 --maf 0.05 --mind 0.15 --make-bed --out ./work/Puget_EVEN
+plink --bfile ./work/pink_salmon.clean --family --keep-cluster-names Koppen_ODD --hwe .001 --geno 0.02 --maf 0.05 --make-bed --out ./work/Koppen_ODD
+plink --bfile ./work/pink_salmon.clean --family --keep-cluster-names Koppen_EVEN --hwe .001 --geno 0.02 --maf 0.05 --make-bed --out ./work/Koppen_EVEN
+plink --bfile ./work/pink_salmon.clean --family --keep-cluster-names Nome_ODD --hwe .001 --geno 0.02 --maf 0.05 --make-bed --out ./work/Nome_ODD
+plink --bfile ./work/pink_salmon.clean --family --keep-cluster-names Nome_EVEN --hwe .001 --geno 0.02 --maf 0.05 --make-bed --out ./work/Nome_EVEN
+plink --bfile ./work/pink_salmon.clean --family --keep-cluster-names Puget_ODD --hwe .001 --geno 0.02 --maf 0.05 --make-bed --out ./work/Puget_ODD
+plink --bfile ./work/pink_salmon.clean --family --keep-cluster-names Puget_EVEN --hwe .001 --geno 0.02 --maf 0.05 --make-bed --out ./work/Puget_EVEN
