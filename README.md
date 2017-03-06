@@ -1,24 +1,35 @@
 # Estimation of effective population size in pink salmon
+## Population Genetics 2017, University of Copenhagen
 #### Ryan Waples ryan.waples@gmail.com
 
 ## Program
-* Apply data filters in (PLINK)
+* Apply data filters (PLINK)
 * Explore patterns of population structure pink salmon and visual the ffect of data filters
 * Estimate pairwise linkage disequilibrium (LD) between all SNPs in each population
 * Use the LD estimates to estiamte effective population size (N<sub>e</sub>) in each population
 * Compare estimates of the census (N<sub>c</sub>) and effective (N<sub>e</sub>) population sizes  
 
 ## Learning outcomes
-* Get familiar with using PLINK for common filtering procedures
-* Get familiar with using R for data analysis and plotting
+* Get confortable with using PLINK for common filtering procedures
+* Get confortable with using R for data analysis and plotting
 * Understand the relationship between LD and N<sub>e</sub>
 
 ## Background reading - Nielsen and Slatkin
-    * Wright-Fischer Model p. 22-27
-    * Effective population size p. 43-46
-    * Linkage Disequilibrium p 108 - 112, including boxes 6.1 - 6.3
+* Wright-Fischer Model p. 22-27
+* Effective population size p. 43-46
+* Linkage Disequilibrium p. 108 - 112, including boxes 6.1 - 6.3
 
+## Pink salmon
+Info on pink salmon here
 
+## Data source
+Link to paper with pink salmon data
+
+## About the *.ipynbfiles
+
+## Exercises
+### Getting started
+    Download the data
 
 
 ## Questions 
@@ -32,7 +43,7 @@
 
 4. Why is it important to separate each population when calculating LD?
     
-### 2_do_PCA &  3_plot_PCA
+### 2_do_PCA & 3_plot_PCA
 1. Why is it useful to explore/visualize your data before and after filtering steps?
 2. What does each dot represent?  What is summarize by the PCA projection?
 3. Describe the differences between the two PCAs (before and after filtering).  
@@ -48,15 +59,13 @@
 3. Which population of pink salmon has the most LD, the least?
 4. How is LD affected by sample size?
   
-### 5_estimate_Ne
-
-### 6_plot_Ne
+### 5_estimate_Ne & 6_plot_Ne
 1. Which population do you expect to have the most genetic drift, the least?
-  
-
-  
+2. Which lineage of pink salmon has higher N<sub>e</sub> in the north, south, and middle?
+3. Which lineage of pink salmon has higher N<sub>e</sub> in the sount?
+ 
 ### Perspectives
 1. Do you think sample size was important?  How would two samples that were siblings affect your Ne estiamtes?
-2. How does this analysis relate to the LD in Mountain and Western Lowland Gorillas?
-3. How would recent migration into a population affect genetic estimates of LD?
-4. How would 
+3. How would recent migration into a population affect estimates of LD and N<sub>e</sub>?
+2. How does this analysis compare to the LD in Mountain and Western Lowland Gorillas?  Do these analyses measure the same thing? 
+4. Given time and money how would you improve this analysis - more samples? more loci? more populations?
