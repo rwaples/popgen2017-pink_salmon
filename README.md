@@ -33,13 +33,13 @@ Rough estimates of the census population sizes (N<sub>c</sub>).
 
 | Lineage      | Population |N<sub>c</sub>| N<sub>e</sub> | Ratio |
 |----------    |------------|------------:|--------------:|-------|
-| **Odd-year** | Nome R.    | ~300K [(source)](http://www.adfg.alaska.gov/index.cfm?adfg=commercialbyareanortonsound.salmon_escapement) |||
-| **Odd-year** | Koppen Cr. | 200K (metapopulation)  [(source)](http://www.adfg.alaska.gov/FedAidPDFs/FMR14-43.pdf) |||
-| **Odd-year** | Puget S.   | ~1.4M [(source)](https://data.wa.gov/Natural-Resources-Environment/WDFW-Salmonid-Stock-Inventory-Population-Escapemen/fgyz-n3uk) |||
+| **Odd-year** | Nome R.    | ~300K [(source)](http://www.adfg.alaska.gov/index.cfm?adfg=commercialbyareanortonsound.salmon_escapement) |?|?|
+| **Odd-year** | Koppen Cr. | 200K (metapopulation)  [(source)](http://www.adfg.alaska.gov/FedAidPDFs/FMR14-43.pdf) |?|?|
+| **Odd-year** | Puget S.   | ~1.4M [(source)](https://data.wa.gov/Natural-Resources-Environment/WDFW-Salmonid-Stock-Inventory-Population-Escapemen/fgyz-n3uk) |?|?|
 |              |            |             |||
-|**Even-year** | Nome R.    | ~10K [(source)](http://www.adfg.alaska.gov/index.cfm?adfg=commercialbyareanortonsound.salmon_escapement) |||
-|**Even-year** | Koppen Cr. | 200K (metapopulation) [(source)](http://www.adfg.alaska.gov/FedAidPDFs/FMR13-46.pdf) |||
-|**Even-year** | Puget S.   | 4K [(source)](https://data.wa.gov/Natural-Resources-Environment/WDFW-Salmonid-Stock-Inventory-Population-Escapemen/fgyz-n3uk) |||
+|**Even-year** | Nome R.    | ~10K [(source)](http://www.adfg.alaska.gov/index.cfm?adfg=commercialbyareanortonsound.salmon_escapement) |?|?|
+|**Even-year** | Koppen Cr. | 200K (metapopulation) [(source)](http://www.adfg.alaska.gov/FedAidPDFs/FMR13-46.pdf) |?|?|
+|**Even-year** | Puget S.   | 4K [(source)](https://data.wa.gov/Natural-Resources-Environment/WDFW-Salmonid-Stock-Inventory-Population-Escapemen/fgyz-n3uk) |?|?|
 
 
 
@@ -49,17 +49,40 @@ You are reading README.md, a markdown document that decribes the
 About the *.ipynb files.  These are [Jupyter](http://jupyter.org/) notebook files that help organize and communicate the analyses in this exercise.  You can view these (non-interactively) on [Github](https://github.com/rwaples/popgen2017-pink_salmon) or with [NBviewer](https://nbviewer.jupyter.org/github/rwaples/popgen2017-pink_salmon/tree/master/)
     
 ### Sub-directories
-* ./data - raw data
-* ./scripts - analysis scripts
-    - *.sh files are meant to be run in the terminal
-    - *.r files are meant to be run in [R](https://cran.r-project.org/)
-* ./work - intermediate data files and result
+* ./data - raw data, this will be provided
+* ./scripts - analysis files
+    - *.sh files contain code meant to be run in the terminal
+    - *.r files contain code meant to be run in [R](https://cran.r-project.org/)
+* ./work - intermediate data files and results
 * ./plots - figures and plots
 
 
 
 ## Exercise
-How to run this exercise. (TODO)
+How to run this exercise. Navigate to a desired base directory and then you can execute all the analyses in this exercise with this series of commands:
+
+```bash
+git clone https://github.com/rwaples/popgen2017-pink_salmon.git
+
+cd popgen2017-pink_salmon
+
+bash ./scripts/0_get_data.sh
+
+bash ./scripts/1_clean_data.sh
+
+bash ./scripts/2_do_PCA.sh
+
+Rscript ./scripts/3_plot_PCA.r
+
+bash ./scripts/4_calculate_LD.sh
+
+Rscript ./scripts/5_estimate_Ne.r
+
+Rscript ./scripts/6_plot_Ne_Nc.r
+
+```
+
+We will go over each of these scripts in turn.
 
 ### Getting started
 * Clone or download this repository (to be run in terminal)
@@ -70,7 +93,7 @@ git clone https://github.com/rwaples/popgen2017-pink_salmon.git
 
 or go to the [repository](https://github.com/rwaples/popgen2017-pink_salmon) on Github and click **Clone or download** and then **Download ZIP**.  Download and unzip the repository in your (TODO) directory.
         
-* Download pink salmon genetic data
+see: [./scripts/0_get_data.sh](./scripts/0_get_data.sh)
 
 ### Running the analyses
 
