@@ -11,7 +11,6 @@ Nc
 ## Use the merge command to join them
 
 estimates = merge(Ne, Nc)
-estimates
 
 estimates$ratio = estimates$Ne_est / estimates$Nc_est
 # reorder to match input order
@@ -25,14 +24,15 @@ colnames(for_barplot) = estimates$Pop
 for_ratio_barplot = data.matrix(t(estimates[,'ratio']))
 colnames(for_ratio_barplot) = estimates$Pop
 
-par(mar=c(10,4,4,2))
 
 png('./plots/Ne estimates.png')
+par(mar=c(10,4,4,2))
 barplot(for_barplot['Ne_est',], col = "white", beside = TRUE, las=2, #axes = FALSE, 
        main = "Ne estimates for each population",ylab = 'Ne')
 dev.off()
 
 png('./plots/Ne and Nc estimates.png')
+par(mar=c(10,4,4,2))
 barplot(for_barplot, col = c("white","black"), beside = TRUE, las=2, axes = FALSE, 
        main = "Ne and Nc estimates for each population",ylab = 'Size')
 axis(side = 2, at = c(100, 10000, 500000, 1000000, 1500000))
@@ -45,6 +45,7 @@ dev.off()
 
 # same plot with a log y axis
 png('./plots/Ne and Nc estimates (log-scaled).png')
+par(mar=c(10,4,4,2))
 barplot(for_barplot, col = c("white","black"), beside = TRUE, las=2, 
         log = 'y', axes = FALSE, ylim = c(100,1400000), 
        main = "Ne and Nc estimates for each population",ylab = 'Size (log scaled)')
@@ -56,6 +57,7 @@ legend("top",
 dev.off()
 
 png('./plots/Ne-Nc ratios.png')
+par(mar=c(10,4,4,2))
 barplot(for_ratio_barplot, col = "gray", beside = TRUE, las=2, #axes = FALSE, 
        main = "Ne/Nc ratios for each population",ylab = 'Ne/Nc ratio')
 dev.off()
