@@ -36,6 +36,7 @@ We have samples from adult fish from six pink salmon populations at three differ
 2. [Koppen Creek](https://www.google.dk/maps/@60.4782575,-143.7244104,7z), Prince William Sound, Alaska, USA
     * in southeast Alaska
 3. [Snohomish River](https://www.google.dk/maps/place/Snohomish+River/@47.9214779,-122.2607548,11z/data=!3m1!4b1!4m5!3m4!1s0x549aaadae1303f37:0x5bdf1b360c1dc900!8m2!3d47.9215631!4d-122.1206718), Puget Slound, Washington state, USA
+   * Near Seattle, WA
 
     
 Rough estimates of the census population sizes (N<sub>c</sub>).
@@ -50,13 +51,10 @@ Rough estimates of the census population sizes (N<sub>c</sub>).
 |**Even-year** | Koppen Cr. | 200K (metapopulation) [(source)](http://www.adfg.alaska.gov/FedAidPDFs/FMR13-46.pdf) |?|?|
 |**Even-year** | Puget S.   | 4K [(source)](https://data.wa.gov/Natural-Resources-Environment/WDFW-Salmonid-Stock-Inventory-Population-Escapemen/fgyz-n3uk) |?|?|
 
-
-
 ## How to use this document.
-You are reading README.md, a markdown document that decribes the 
+You are reading README.md, a markdown document that decribes the exercise.
 
 About the *.ipynb files.  These are [Jupyter](http://jupyter.org/) notebook files that help organize and communicate the analyses in this exercise.  You can view these (non-interactively) on [Github](https://github.com/rwaples/popgen2017-pink_salmon) or with [NBviewer](https://nbviewer.jupyter.org/github/rwaples/popgen2017-pink_salmon/tree/master/)
-
 
 
 ### Sub-directories
@@ -80,12 +78,13 @@ mkdir popgen2017-pink_salmon
 cd popgen2017-pink_salmon
 wget https://api.github.com/repos/rwaples/popgen2017-pink_salmon/tarball/master -O - | tar xz --strip=1
 ```
-
+**or**
 ```bash
 git clone https://github.com/rwaples/popgen2017-pink_salmon.git
 ```
 
-or go to the [repository](https://github.com/rwaples/popgen2017-pink_salmon) on Github and click **Clone or download** and then **Download ZIP**.  Download and unzip the repository in your ~/popgen2016/exercises directory.  Notice the name of the directory might have a 'master' suffix.
+**or**
+* go to the [repository](https://github.com/rwaples/popgen2017-pink_salmon) on Github and click **Clone or download** and then **Download ZIP**.  Download and unzip the repository in your ~/popgen2016/exercises directory.  Notice the name of the directory might have a 'master' suffix.
 
 
 ### Running the analyses
@@ -165,5 +164,5 @@ Rscript ./scripts/6_plot_Ne_Nc.r
 4. Given time and money how would you improve this analysis - more samples? more loci? more populations?
 
 ## Data sources
-[Seeb et al 2014](http://onlinelibrary.wiley.com/doi/10.1111/mec.12769/abstract)
-[Limborg et al 2014](https://academic.oup.com/jhered/article-lookup/doi/10.1093/jhered/esu063)
+* [Seeb et al 2014](http://onlinelibrary.wiley.com/doi/10.1111/mec.12769/abstract)
+* [Limborg et al 2014](https://academic.oup.com/jhered/article-lookup/doi/10.1093/jhered/esu063)
