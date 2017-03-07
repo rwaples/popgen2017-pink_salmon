@@ -3,18 +3,18 @@
 ##### Author: Ryan Waples ryan.waples@gmail.com
 
 ## Program
-* Download pink salmon data
-* Apply data filters (`Plink`)
-* Explore patterns of population structure pink salmon (`Plink` and `R`)
-* Visualize the effect of data filters (`Plink` and `R`)
-* Estimate pairwise linkage disequilibrium (LD) between all SNPs in each population (`Plink`)
-* Use the LD estimates to estimate effective population size (N<sub>e</sub>) in each population (`R`)
+* Download pink salmon data, apply filters. (`Plink`)
+* Visualize the effect of data filters with a PCA. (`Plink` and `R`)
+* Explore patterns of population structure pink salmon. (`Plink` and `R`)
+* Estimate pairwise linkage disequilibrium (LD) between all SNPs in each population. (`Plink`)
+* Use the LD estimates to estimate effective population size (N<sub>e</sub>) in each population. (`R`)
 * Compare estimates of the census (N<sub>c</sub>) and effective (N<sub>e</sub>) population sizes.   
 
 ## Learning outcomes
 * Get confortable with using PLINK for common filtering procedures.
-* Get confortable with using R for data analysis and plotting
-* Understand the relationship between LD and N<sub>e</sub>
+* Get confortable with using R for data analysis and plotting.
+* Understand the relationship between LD and N<sub>e</sub>.
+* Understand the how N<sub>e</sub> and N<sub>c</sub> vary in natural populations. 
 
 ## Background reading (Nielsen and Slatkin)
 * Wright-Fischer Model: p. 22-27
@@ -22,12 +22,18 @@
 * Linkage Disequilibrium: p. 108-112, including boxes 6.1-6.3
 
 ## Pink salmon
-Info on pink salmon here. (TODO)  
+Pink salmon in the Pacific have an obligate 2 year life-cycle; they live to be 2 years old, reproduce, then die. This results in two reproductively isolated lineages, in the odd and even years.
+"Pink salmon, a highly abundant and widely ranging salmonid, provide a naturally occurring opportunity to study the effects of similar environments on divergent genetic backgrounds due to a strict two-year semelparous life history. The species is composed of two reproductively isolated lineages with overlapping ranges that share the same spawning and rearing environments in alternate years."  (Seeb et al 2014)
 
-Three sampling sites.
-* Pictures/Maps of the sampling cites (TODO)
+We have samples from adult fish from six pink salmon populations at three different sites.  At each site we have samples from both the odd- and even-year lineage.   
 
-Nome, Alaska is the end of the [Iditarod dog sled race](http://iditarod.com/)
+### Collection sites, north to south
+1. [Nome River](https://www.google.dk/maps?q=Nome+River+alaska&um=1&ie=UTF-8&sa=X&ved=0ahUKEwjD1r25s8XSAhVGhywKHbOPB4QQ_AUICSgC), Norten Sound, Alaska, USA
+    * Nome, Alaska is the end of the [Iditarod dog sled race](http://iditarod.com/)
+2. [Koppen Creek](https://www.google.dk/maps/@60.4782575,-143.7244104,7z), Prince William Sound, Alaska, USA
+    * in southeast Alaska
+3. [Snohomish River](https://www.google.dk/maps/place/Snohomish+River/@47.9214779,-122.2607548,11z/data=!3m1!4b1!4m5!3m4!1s0x549aaadae1303f37:0x5bdf1b360c1dc900!8m2!3d47.9215631!4d-122.1206718), Puget Slound, Washington state, USA
+
     
 Rough estimates of the census population sizes (N<sub>c</sub>).
 
@@ -62,9 +68,8 @@ About the *.ipynb files.  These are [Jupyter](http://jupyter.org/) notebook file
 How to run this exercise. Navigate to a desired base directory and then you can execute all the analyses in this exercise with this series of commands:
 
 ```bash
-git clone https://github.com/rwaples/popgen2017-pink_salmon.git
 
-cd popgen2017-pink_salmon
+cd popgen2017-pink_salmon-master
 
 bash ./scripts/0_get_data.sh
 
@@ -114,7 +119,6 @@ see: [./scripts/0_get_data.sh](./scripts/0_get_data.sh)
 ### 2_do_PCA & 3_plot_PCA
 1. Why is it useful to explore/visualize your data before and after filtering steps?
 
-
 2. What is shown in by first few axes of the PCA projection? What does each dot represent?
 
 4. Describe the differences between the two PCAs (before and after filtering).  
@@ -142,7 +146,7 @@ see: [./scripts/0_get_data.sh](./scripts/0_get_data.sh)
 2. Which lineage of pink salmon has higher N<sub>e</sub> in the north, south, and middle?
 
 3. Which lineage of pink salmon has higher N<sub>e</sub> in the sount?
- 
+
 ### Perspectives
 
 1. What is the difference between a populations N<sub>e</sub> and N<sub>c</sub>.  Why are both important?
@@ -155,5 +159,6 @@ see: [./scripts/0_get_data.sh](./scripts/0_get_data.sh)
 
 4. Given time and money how would you improve this analysis - more samples? more loci? more populations?
 
-## Data source
-Link to paper with pink salmon data
+## Data sources
+[Seeb et al 2014](http://onlinelibrary.wiley.com/doi/10.1111/mec.12769/abstract)
+[Limborg et al 2014](https://academic.oup.com/jhered/article-lookup/doi/10.1093/jhered/esu063)
