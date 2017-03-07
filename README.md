@@ -2,6 +2,9 @@
 ## Population Genetics 2017, University of Copenhagen
 ##### Author: Ryan Waples ryan.waples@gmail.com
 
+# TODO
+* remove the ipynb Python files, keep only the markdown, remove the markdown 
+
 ## Program
 * Download pink salmon data, apply filters. (`Plink`)
 * Visualize the effect of data filters with a PCA. (`Plink` and `R`)
@@ -53,7 +56,9 @@ Rough estimates of the census population sizes (N<sub>c</sub>).
 You are reading README.md, a markdown document that decribes the 
 
 About the *.ipynb files.  These are [Jupyter](http://jupyter.org/) notebook files that help organize and communicate the analyses in this exercise.  You can view these (non-interactively) on [Github](https://github.com/rwaples/popgen2017-pink_salmon) or with [NBviewer](https://nbviewer.jupyter.org/github/rwaples/popgen2017-pink_salmon/tree/master/)
-    
+
+
+
 ### Sub-directories
 * ./data - raw data, this will be provided
 * ./scripts - analysis files
@@ -63,46 +68,46 @@ About the *.ipynb files.  These are [Jupyter](http://jupyter.org/) notebook file
 * ./plots - figures and plots
 
 
-
 ## Exercise
 How to run this exercise. Navigate to a desired base directory and then you can execute all the analyses in this exercise with this series of commands:
-
-```bash
-
-cd popgen2017-pink_salmon-master
-
-bash ./scripts/0_get_data.sh
-
-bash ./scripts/1_clean_data.sh
-
-bash ./scripts/2_do_PCA.sh
-
-Rscript ./scripts/3_plot_PCA.r
-
-bash ./scripts/4_calculate_LD.sh
-
-Rscript ./scripts/5_estimate_Ne.r
-
-Rscript ./scripts/6_plot_Ne_Nc.r
-
-```
 
 We will go over each of these scripts in turn.
 
 ### Getting started
 * Clone or download this repository (to be run in terminal)
-        
+```
+mkdir popgen2017-pink_salmon
+cd popgen2017-pink_salmon
+wget https://api.github.com/repos/rwaples/popgen2017-pink_salmon/tarball/master -O - | tar xz --strip=1
+```
+
 ```bash
 git clone https://github.com/rwaples/popgen2017-pink_salmon.git
 ```
 
-or go to the [repository](https://github.com/rwaples/popgen2017-pink_salmon) on Github and click **Clone or download** and then **Download ZIP**.  Download and unzip the repository in your (TODO) directory.
-        
-see: [./scripts/0_get_data.sh](./scripts/0_get_data.sh)
+or go to the [repository](https://github.com/rwaples/popgen2017-pink_salmon) on Github and click **Clone or download** and then **Download ZIP**.  Download and unzip the repository in your ~/popgen2016/exercises directory.  Notice the name of the directory might have a 'master' suffix.
+
 
 ### Running the analyses
 
+From with the directory you with use for the exercise (maybe ~/popgen2016/exercises/popgen2017-pink_salmon):
 
+1. Download the pink genotype and census-size data.
+```bash 
+bash ./scripts/0_get_data.sh 
+```
+see: [./scripts/0_get_data.sh](./scripts/0_get_data.sh)
+
+1. filter the data 
+```bash
+bash ./scripts/1_clean_data.sh 
+bash ./scripts/2_do_PCA.sh
+Rscript ./scripts/3_plot_PCA.r
+bash ./scripts/4_calculate_LD.sh
+Rscript ./scripts/5_estimate_Ne.r
+Rscript ./scripts/6_plot_Ne_Nc.r
+
+```
 
 
 ## Questions 
