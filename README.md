@@ -72,15 +72,17 @@ or go to the [repository](https://github.com/rwaples/popgen2017-pink_salmon) and
 ### 2_do_PCA & 3_plot_PCA
 1. Why is it useful to explore/visualize your data before and after filtering steps?
 
-2. What is shown in by first few axes of the PCA projection? What does each dot represent?  
+2. What is shown in by first few axes of the PCA projection? What does each dot represent?
 
-3. Describe the differences between the two PCAs (before and after filtering).  
+4. Describe the differences between the two PCAs (before and after filtering).  
     * How are they different? 
     * How are they similar?
 
 4. Why do you think there is a Puget_EVEN individual that is projected near the the Koppen_EVEN individuals?
     * Give a possible biological explanation
     * Give a possible laboratory explanation  
+    
+5. Here we analyzed all six populations together.  Would it have been useful to perform PCA on the data from each population separately?
     
 ### 4_calculate_r2
 1. What does the r<sup>2</sup> statistic measure?  How is r<sup>2</sup> related to LD?
