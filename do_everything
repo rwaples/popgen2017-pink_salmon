@@ -1,5 +1,6 @@
-#git reset --hard
-#git pull
+mkdir popgen2017-pink_salmon
+cd popgen2017-pink_salmon
+wget https://api.github.com/repos/rwaples/popgen2017-pink_salmon/tarball/master -O - | tar xz --strip=1
 
 bash ./scripts/0_get_data.sh 
 bash ./scripts/1_clean_data.sh 
