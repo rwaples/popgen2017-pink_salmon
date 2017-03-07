@@ -45,7 +45,8 @@ png("./plots/PCA.pink_salmon.clean.png")
 plot_pca_basic(pca_clean, title = 'pink_salmon.clean')
 dev.off()
 
-plot_pca_basic(pca_initial, title = 'pink_salmon.inital')
-plot_pca_basic(pca_clean, title = 'pink_salmon.clean')
+#plot_pca_basic(pca_initial, title = 'pink_salmon.inital')
+#plot_pca_basic(pca_clean, title = 'pink_salmon.clean')
+
 
 

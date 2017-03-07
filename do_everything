@@ -1,0 +1,10 @@
+#git reset --hard
+#git pull
+
+bash ./scripts/0_get_data.sh 
+bash ./scripts/1_clean_data.sh 
+bash ./scripts/2_do_PCA.sh 
+Rscript ./scripts/3_plot_PCA.r
+bash ./scripts/4_calculate_LD.sh 
+Rscript ./scripts/5_estimate_Ne.r
+Rscript ./scripts/6_plot_Ne_Nc.r
