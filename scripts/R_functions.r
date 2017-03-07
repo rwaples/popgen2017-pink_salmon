@@ -61,16 +61,3 @@ get_Ne <- function(base_path){
     #  r2 matrix used in the calculation (with within-chromsome r2 values masked)
     return (list(Ne_est = Ne_est, r2_matrix = pop_mat))
 }
-
-
-
-#library(lattice)
-
-#pal <- colorRampPalette(c("white", "red"), space = "rgb")
-#levelplot(my_Ne$r2_matrix, main="Title", xlab="", ylab="", 
-#          col.regions=pal(1000), 
-#          #cuts=1000, 
-#          #at=seq(0,1,0.001),
-#          useRaster = FALSE)
-
-#library(ggplot2, lib.loc = '/home/ryan/anaconda2/lib/R/library/')
