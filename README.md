@@ -1,31 +1,47 @@
 # Estimation of contemporary effective population size in pink salmon
 ## Population Genetics 2017, University of Copenhagen
-#### Ryan Waples ryan.waples@gmail.com
+##### Author: Ryan Waples ryan.waples@gmail.com
 
 ## Program
-* Apply data filters (PLINK)
-* Explore patterns of population structure pink salmon 
-* Visualize the effect of data filters
-* Estimate pairwise linkage disequilibrium (LD) between all SNPs in each population
-* Use the LD estimates to estimate effective population size (N<sub>e</sub>) in each population
-* Compare estimates of the census (N<sub>c</sub>) and effective (N<sub>e</sub>) population sizes  
+* Download pink salmon data
+* Apply data filters (`Plink`)
+* Explore patterns of population structure pink salmon (`Plink` and `R`)
+* Visualize the effect of data filters (`Plink` and `R`)
+* Estimate pairwise linkage disequilibrium (LD) between all SNPs in each population (`Plink`)
+* Use the LD estimates to estimate effective population size (N<sub>e</sub>) in each population (`R`)
+* Compare estimates of the census (N<sub>c</sub>) and effective (N<sub>e</sub>) population sizes.   
 
 ## Learning outcomes
-* Get confortable with using PLINK for common filtering procedures
+* Get confortable with using PLINK for common filtering procedures.
 * Get confortable with using R for data analysis and plotting
 * Understand the relationship between LD and N<sub>e</sub>
 
-## Background reading - Nielsen and Slatkin
-* Wright-Fischer Model - p. 22-27
-* Effective population size - p. 43-46
-* Linkage Disequilibrium - p. 108-112, including boxes 6.1-6.3
+## Background reading (Nielsen and Slatkin)
+* Wright-Fischer Model: p. 22-27
+* Effective population size: p. 43-46
+* Linkage Disequilibrium: p. 108-112, including boxes 6.1-6.3
 
 ## Pink salmon
-Info on pink salmon here.  Nome, Alaska is the end of the [Iditarod dog sled race](http://iditarod.com/)
+Info on pink salmon here. (TODO)  
 
-Pictures of the sampling cites
+Three sampling sites.
+* Pictures/Maps of the sampling cites (TODO)
+
+Nome, Alaska is the end of the [Iditarod dog sled race](http://iditarod.com/)
     
-Best estimates of the census population sizes
+Rough estimates of the census population sizes (N<sub>c</sub>).
+
+| Lineage      | Population |N<sub>c</sub>| N<sub>e</sub> | Ratio |
+|----------    |------------|------------:|--------------:|-------|
+| **Odd-year** | Nome R.    | ~300K [(source)](http://www.adfg.alaska.gov/index.cfm?adfg=commercialbyareanortonsound.salmon_escapement) |||
+| **Odd-year** | Koppen Cr. | 200K (metapopulation)  [(source)](http://www.adfg.alaska.gov/FedAidPDFs/FMR14-43.pdf) |||
+| **Odd-year** | Puget S.   | ~1.4M [(source)](https://data.wa.gov/Natural-Resources-Environment/WDFW-Salmonid-Stock-Inventory-Population-Escapemen/fgyz-n3uk) |||
+|              |            |             |||
+|**Even-year** | Nome R.    | ~10K [(source)](http://www.adfg.alaska.gov/index.cfm?adfg=commercialbyareanortonsound.salmon_escapement) |||
+|**Even-year** | Koppen Cr. | 200K (metapopulation) [(source)](http://www.adfg.alaska.gov/FedAidPDFs/FMR13-46.pdf) |||
+|**Even-year** | Puget S.   | 4K [(source)](https://data.wa.gov/Natural-Resources-Environment/WDFW-Salmonid-Stock-Inventory-Population-Escapemen/fgyz-n3uk) |||
+
+
 
 ## How to use this document.
 You are reading README.md, a markdown document that decribes the 
@@ -40,20 +56,23 @@ About the *.ipynb files.  These are [Jupyter](http://jupyter.org/) notebook file
 * ./work - intermediate data files and result
 * ./plots - figures and plots
 
+
+
 ## Exercise
+How to run this exercise. (TODO)
+
 ### Getting started
 * Clone or download this repository (to be run in terminal)
         
-```
+```bash
 git clone https://github.com/rwaples/popgen2017-pink_salmon.git
 ```
 
-or go to the [repository](https://github.com/rwaples/popgen2017-pink_salmon) and click **Clone or download** and then **Download ZIP**
+or go to the [repository](https://github.com/rwaples/popgen2017-pink_salmon) on Github and click **Clone or download** and then **Download ZIP**.  Download and unzip the repository in your (TODO) directory.
         
 * Download pink salmon genetic data
 
 ### Running the analyses
-
 
 
 
@@ -71,6 +90,7 @@ or go to the [repository](https://github.com/rwaples/popgen2017-pink_salmon) and
     
 ### 2_do_PCA & 3_plot_PCA
 1. Why is it useful to explore/visualize your data before and after filtering steps?
+
 
 2. What is shown in by first few axes of the PCA projection? What does each dot represent?
 
@@ -101,7 +121,10 @@ or go to the [repository](https://github.com/rwaples/popgen2017-pink_salmon) and
 3. Which lineage of pink salmon has higher N<sub>e</sub> in the sount?
  
 ### Perspectives
-1. Do you think sample size was important?  How would two samples that were siblings affect your Ne estiamtes?
+
+1. What is the difference between a populations N<sub>e</sub> and N<sub>c</sub>.  Why are both important?
+
+2. Do you think sample size was important?  How would two samples that were siblings affect your Ne estiamtes?
 
 2. How would recent migration into a population affect estimates of LD and N<sub>e</sub>?
 
@@ -111,4 +134,3 @@ or go to the [repository](https://github.com/rwaples/popgen2017-pink_salmon) and
 
 ## Data source
 Link to paper with pink salmon data
-
