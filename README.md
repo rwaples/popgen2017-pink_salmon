@@ -141,20 +141,29 @@ Rscript ./scripts/6_plot_Ne_Nc.r
 see: [./scripts/6_plot_Ne_Nc.r](./scripts/6_plot_Ne_Nc.r) to see just the commands that are executed, or see [./6_plot_Ne_Nc.ipynb](./6_plot_Ne_Nc.ipynb) for an anotated version that describes each line.
 
 This will create four plots looking at Ne and Nc in the six pink salmon populations.
-* ./plots/Ne and Nc estimates.png
-* ./plots/Ne and Nc estimates (log-scaled).png
+
+##### Barplot of the population-specific effective population size estimates
 * ./plots/Ne estimates.png
+
+
+##### Barplot of the population-specific effective and census population size estimates
+* ./plots/Ne and Nc estimates.png
+You can see how large some populations are in absolute number.
+
+##### A log-scaled version of the above plot.
+* ./plots/Ne and Nc estimates (log-scaled).png
+
+##### Looking at the Ne/Nc ratios
 * ./plots/Ne-Nc ratios.png
 
-And also a heatmap of the r^2 matrix used in the Ne estimate
+#### And also a heatmap of the r^2 matrix used in the Ne estimate
+In these plots yellow is low LD and orange is high LD. 
 * /plots/LD_Koppen_EVEN.png
 * /plots/LD_Koppen_ODD.png
 * /plots/LD_Nome_EVEN.png
 * /plots/LD_Nome_ODD.png
 * /plots/LD_Puget_EVEN.png
 * /plots/LD_Puget_ODD.png
-
-
 
 Also, running the commands in [./do_everything](./do_everything) will create a new directory, download this github repository, and run the entire analysis inside the new directory.
 
