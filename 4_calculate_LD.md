@@ -3,7 +3,7 @@ All commands to be run in the terminal.
 
 See Plink documentation [here](https://www.cog-genomics.org/plink2/).
 
-For each of the six poulations, use Plink to calculate LD between each pair of loci.   The "--r2 square" flag to Plink will produce a LxL matrix of pairwise r<sup>2</sup>, with L as the number of loci.  
+For each of the six populations, use Plink to calculate LD between each pair of loci.   The "--r2 square" flag to Plink will produce a LxL matrix of pairwise r<sup>2</sup>, with L as the number of loci.  
 
 
 
