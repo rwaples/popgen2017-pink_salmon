@@ -2,8 +2,6 @@
 ## Population Genetics 2017, University of Copenhagen
 ##### Author: Ryan Waples ryan.waples@gmail.com
 
-# TODO
-* remove the ipynb Python files, keep only the markdown, remove the markdown 
 
 ## Program
 * Download pink salmon data, apply filters. (`Plink`)
