@@ -215,18 +215,22 @@ Also, running the commands in [./do_everything](./do_everything) will create a n
 4. What do think the effect of the Puget_EVEN individual that is projected near the the Koppen_EVEN individuals on estimates of Ne? 
    * in Puget_EVEN?
    * in Koppen_EVEN?
+   
+5. What more would you like to know about the pink salmon populations in order to understand the Ne/Nc ratios?
 
 ### Perspectives
 
-1. What is the difference between a populations N<sub>e</sub> and N<sub>c</sub>.  Why are both important?
+1. What is the difference between a populations N<sub>e</sub> and N<sub>c</sub>.  Why are both important when seeking to underestand population dynamics?
 
-2. Do you think sample size was important?  How would two samples that were siblings affect your Ne estiamtes?
+2. Can you calculate the realtive signal (due to Ne) and the noise (due to sample size?) in the mean r2 value? 
 
-2. How would recent migration into a population affect estimates of LD and N<sub>e</sub>?
+3. Say you sampled an addition individual that was a sibling of an individual already in your population samples.  How woud this affect your Ne estimates? 
 
-3. How does this analysis compare to the LD in Mountain and Western Lowland Gorillas?  Do these analyses measure the same thing? 
+4. How would recent migration into a population affect estimates of LD and N<sub>e</sub>?
 
-4. Given time and money how would you improve this analysis - more samples? more loci? more populations?
+5. How does this analysis compare to the LD analysis in Mountain and Western Lowland Gorillas?  Do these analyses measure the same thing? 
+
+6. Given time and money how would you improve this analysis - more samples? more loci? more populations?
 
 ## Data sources
 * [Seeb et al 2014](http://onlinelibrary.wiley.com/doi/10.1111/mec.12769/abstract)
