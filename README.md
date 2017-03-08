@@ -125,12 +125,14 @@ bash ./scripts/4_calculate_LD.sh
 ```
 see: [./scripts/4_calculate_LD.sh](./scripts/4_calculate_LD.sh) to see the commands that are executed, or see [./4_calculate_LD.md](./4_calculate_LD.md) for an anotated version that describes each line.
 
-####  Estimate LD
+####  Estimate Ne
 
 ```bash
 Rscript ./scripts/5_estimate_Ne.r
 ```
 see: [./scripts/5_estimate_Ne.r](./scripts/5_estimate_Ne.r) to see just the commands that are executed, or see [./5_estimate_Ne.ipynb](./5_estimate_Ne.ipynb) for an anotated version that describes each line.
+
+Becuase it can be very computationally intensive, I have omitted calculating confidence intervals for the Ne estiamtes, with a bootstrap or jackknife procedure.  There is still research into the best was to provide accurate confidence intervals with the LD method of estimating Ne.  See [this paper](http://www.nature.com/hdy/journal/v117/n4/full/hdy201619a.html) and also [this paper](http://www.nature.com/hdy/journal/v117/n4/full/hdy201660a.html) for some discussion of this issue.
 
 #### Plot the Ne and Nc estimates
 ```bash
@@ -154,7 +156,7 @@ And also a heatmap of the r^2 matrix used in the Ne estimate
 
 
 
-Also, running the commands in [./do_everything] [./do_everything] will create a new directory, download this github repository, and run the entire analysis inside the new directory.
+Also, running the commands in [./do_everything](./do_everything) will create a new directory, download this github repository, and run the entire analysis inside the new directory.
 
 ## Questions 
 
