@@ -11,6 +11,7 @@ Nc
 ## Use the merge command to join them
 
 estimates = merge(Ne, Nc)
+estimates
 
 estimates$ratio = estimates$Ne_est / estimates$Nc_est
 # reorder to match input order
@@ -33,6 +34,7 @@ dev.off()
 
 png('./plots/Ne and Nc estimates.png')
 par(mar=c(10,4,4,2))
+
 barplot(for_barplot, col = c("white","black"), beside = TRUE, las=2, axes = FALSE, 
        main = "Ne and Nc estimates for each population",ylab = 'Size')
 axis(side = 2, at = c(100, 10000, 500000, 1000000, 1500000))
@@ -41,7 +43,6 @@ legend("top",
   fill = c("white","black")
 )
 dev.off()
-
 
 # same plot with a log y axis
 png('./plots/Ne and Nc estimates (log-scaled).png')
@@ -62,9 +63,6 @@ barplot(for_ratio_barplot, col = "gray", beside = TRUE, las=2, #axes = FALSE,
        main = "Ne/Nc ratios for each population",ylab = 'Ne/Nc ratio')
 dev.off()
 
-
-
-
 source('./scripts/R_functions.r')
 
 Ne_Nome_ODD = get_Ne('./work/Nome_ODD')
@@ -74,27 +72,27 @@ Ne_Koppen_EVEN = get_Ne('./work/Koppen_EVEN')
 Ne_Puget_ODD = get_Ne('./work/Puget_ODD')
 Ne_Puget_EVEN = get_Ne('./work/Puget_EVEN')
 
-png('./plots/LD_Nome_ODD.png')
+png('./plots/LD_Nome_ODD.png', width=nrow(Ne_Nome_ODD$r2_matrix),height=nrow(Ne_Nome_ODD$r2_matrix))
 image(Ne_Nome_ODD$r2_matrix, axes = FALSE, col = rev(heat.colors(256)))
 dev.off()
 
-png('./plots/LD_Nome_EVEN.png')
+png('./plots/LD_Nome_EVEN.png', width=nrow(Ne_Nome_EVEN$r2_matrix),height=nrow(Ne_Nome_EVEN$r2_matrix))
 image(Ne_Nome_EVEN$r2_matrix, axes = FALSE, col = rev(heat.colors(256)))
 dev.off()
 
-png('./plots/LD_Koppen_ODD.png')
+png('./plots/LD_Koppen_ODD.png', width=nrow(Ne_Koppen_ODD$r2_matrix),height=nrow(Ne_Koppen_ODD$r2_matrix))
 image(Ne_Koppen_ODD$r2_matrix, axes = FALSE, col = rev(heat.colors(256)))
 dev.off()
 
-png('./plots/LD_Koppen_EVEN.png')
+png('./plots/LD_Koppen_EVEN.png', width=nrow(Ne_Koppen_EVEN$r2_matrix),height=nrow(Ne_Koppen_EVEN$r2_matrix))
 image(Ne_Koppen_EVEN$r2_matrix, axes = FALSE, col = rev(heat.colors(256)))
 dev.off()
 
-png('./plots/LD_Puget_ODD.png')
+png('./plots/LD_Puget_ODD.png', width=nrow(Ne_Puget_ODD$r2_matrix),height=nrow(Ne_Puget_ODD$r2_matrix))
 image(Ne_Puget_ODD$r2_matrix, axes = FALSE, col = rev(heat.colors(256)))
 dev.off()
 
-png('./plots/LD_Puget_EVEN.png')
+png('./plots/LD_Puget_EVEN.png', width=nrow(Ne_Puget_EVEN$r2_matrix),height=nrow(Ne_Puget_EVEN$r2_matrix))
 image(Ne_Puget_EVEN$r2_matrix, axes = FALSE, col = rev(heat.colors(256)))
 dev.off()
 

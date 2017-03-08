@@ -1,8 +1,5 @@
 
-#!/usr/bin/Rscript
-
-#library(ggplot2, lib.loc = '/home/ryan/anaconda2/lib/R/library/')
-
+# Options for the notebook 
 options(jupyter.plot_mimetypes = "image/png") 
 options(repr.plot.width = 6, repr.plot.height = 6)
 
@@ -45,8 +42,6 @@ png("./plots/PCA.pink_salmon.clean.png")
 plot_pca_basic(pca_clean, title = 'pink_salmon.clean')
 dev.off()
 
-#plot_pca_basic(pca_initial, title = 'pink_salmon.inital')
-#plot_pca_basic(pca_clean, title = 'pink_salmon.clean')
-
+print("Done plotting PCAs")
 
 
