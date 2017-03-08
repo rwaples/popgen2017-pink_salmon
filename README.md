@@ -65,7 +65,7 @@ About the *.ipynb files.  These are [Jupyter](http://jupyter.org/) notebook file
 
 
 ## Exercise
-How to run this exercise. Navigate to a desired base directory and then you can execute all the analyses in this exercise with this series of commands:
+How to run this exercise. Navigate to a desired base directory (maybe ~/popgen2016/exercises) and then you can execute all the analyses in this exercise with this series of commands:
 
 We will go over each of these scripts in turn.
 
