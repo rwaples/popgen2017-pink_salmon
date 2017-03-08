@@ -147,8 +147,8 @@ This will create four plots looking at Ne and Nc in the six pink salmon populati
 
 
 ##### Barplot of the population-specific effective and census population size estimates
-* ./plots/Ne and Nc estimates.png
 You can see how large some populations are in absolute number.
+* ./plots/Ne and Nc estimates.png
 
 ##### A log-scaled version of the above plot.
 * ./plots/Ne and Nc estimates (log-scaled).png
