@@ -167,6 +167,8 @@ Also, running the commands in [./do_everything](./do_everything) will create a n
     
 3. What are the sample sizes and number of loci used in the analysis of each population, why do they differ?
 
+4. Does the genotyping rate differ between the popuations?
+
 4. Why is it important to separate each population when calculating LD?
     
 ### 2_do_PCA & 3_plot_PCA
@@ -185,20 +187,25 @@ Also, running the commands in [./do_everything](./do_everything) will create a n
 5. Here we analyzed all six populations together.  Would it have been useful to perform PCA on the data from each population separately?
     
 ### 4_calculate_r2
-1. What does the r<sup>2</sup> statistic measure?  How is r<sup>2</sup> related to LD?
+1. What does the r<sup>2</sup> statistic measure?  How is r<sup>2</sup> related to D?
 
 2. Why is it often important to remove very low frequency alleles when measuring LD?
 
-3. Which population of pink salmon has the most LD, the least?
+3. How would our estimates of LD have changed if we did not exclude locus pairs on the same chromosome?
 
-4. How is LD affected by sample size?
+4. How is LD affected by sample size?  
   
 ### 5_estimate_Ne & 6_plot_Ne
-1. Which population do you expect to have the most genetic drift, the least?
 
-2. Which lineage of pink salmon has higher N<sub>e</sub> in the north, south, and middle?
+1. Which lineage of pink salmon has higher N<sub>e</sub> in the north, south, and middle of the range?
 
-3. Which lineage of pink salmon has higher N<sub>e</sub> in the sount?
+2. Which population do you expect to have the most genetic drift, the least?
+
+3. Which population of pink salmon has the most LD, the least?
+
+4. What do think the effect of the Puget_EVEN individual that is projected near the the Koppen_EVEN individuals on estimates of Ne? 
+   * in Puget_EVEN?
+   * in Koppen_EVEN?
 
 ### Perspectives
 
