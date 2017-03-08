@@ -91,20 +91,22 @@ git clone https://github.com/rwaples/popgen2017-pink_salmon.git
 
 From with the directory you with use for the exercise (maybe ~/popgen2016/exercises/popgen2017-pink_salmon):
 
-1. Download the pink genotype and census-size data.
+#### Download the pink genotype and census-size data.
 ```bash 
 bash ./scripts/0_get_data.sh 
 ```
 see: [./scripts/0_get_data.sh](./scripts/0_get_data.sh) to see the commands that are executed, or see [./0_get_data.md](./0_get_data.md) for an anotated version that describes what is going on.
 
-1. filter the data 
+#### Filter the data 
 ```bash
 bash ./scripts/1_clean_data.sh 
 ```
 see: [./scripts/1_clean_data.sh](./scripts/1_clean_data.sh) to see the commands that are executed, or see [./1_clean_data.md](./1_clean_data.md) for an anotated version that describes each line.
 
+#### Perform PCA on data before and after filtering
+
  ```bash
-./scripts/2_do_PCA.sh
+bash ./scripts/2_do_PCA.sh
 ```
 see: [./scripts/2_do_PCA.sh](./scripts/1_clean_data.sh) to see just the commands that are executed, or see [./2_do_PCA.md](./2_do_PCA.md) for an anotated version that describes each line.
 
@@ -113,21 +115,48 @@ Rscript ./scripts/3_plot_PCA.r
 ```
 see: [./scripts/3_plot_PCA.r](./scripts/3_plot_PCA.r) to see just the commands that are executed, or see [./3_plot_PCA.ipynb](./3_plot_PCA.ipynb) for an anotated version that describes each line.
 
+This will create two PCA plots. These plots show the first two PC axes from the inital and post-filtering data sets of the six populations.
+
+* /plots/PCA.pink_salmon.clean.png
+* /plots/PCA.pink_salmon.inital.png
+
+ #### Calcaulte LD 
+
 ```bash 
-./scripts/4_calculate_LD.sh
+bash ./scripts/4_calculate_LD.sh
 ```
 see: [./scripts/4_calculate_LD.sh](./scripts/4_calculate_LD.sh) to see the commands that are executed, or see [./4_calculate_LD.md](./4_calculate_LD.md) for an anotated version that describes each line.
+
+####  Estimate LD
 
 ```bash
 Rscript ./scripts/5_estimate_Ne.r
 ```
 see: [./scripts/5_estimate_Ne.r](./scripts/5_estimate_Ne.r) to see just the commands that are executed, or see [./5_estimate_Ne.ipynb](./5_estimate_Ne.ipynb) for an anotated version that describes each line.
+
+#### Plot the Ne and Nc estimates
 ```bash
 Rscript ./scripts/6_plot_Ne_Nc.r
 ```
 see: [./scripts/6_plot_Ne_Nc.r](./scripts/6_plot_Ne_Nc.r) to see just the commands that are executed, or see [./6_plot_Ne_Nc.ipynb](./6_plot_Ne_Nc.ipynb) for an anotated version that describes each line.
 
+This will create four plots looking at Ne and Nc in the six pink salmon populations.
+* ./plots/Ne and Nc estimates.png
+* ./plots/Ne and Nc estimates (log-scaled).png
+* ./plots/Ne estimates.png
+* ./plots/Ne-Nc ratios.png
 
+And also a heatmap of the r^2 matrix used in the Ne estimate
+* /plots/LD_Koppen_EVEN.png
+* /plots/LD_Koppen_ODD.png
+* /plots/LD_Nome_EVEN.png
+* /plots/LD_Nome_ODD.png
+* /plots/LD_Puget_EVEN.png
+* /plots/LD_Puget_ODD.png
+
+
+
+Also, running the commands in [./do_everything] [./do_everything] will create a new directory, download this github repository, and run the entire analysis inside the new directory.
 
 ## Questions 
 
